@@ -4,6 +4,7 @@ This Xcode project reproduces an issue with ldk-node's .build() function.
 
 Expected behavior:
 App runs and node builds every time.
+
 Observed behavior:
 App runs and node builds on first execution.
 On second run, node fails to build with error 7.
