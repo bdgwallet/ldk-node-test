@@ -26,6 +26,20 @@ struct ContentView: View {
                 
             let nodeBuilder = Builder.fromConfig(config: nodeConfig)
             
+            // -- Optional, write test file to directory to check availability
+            //let str = "Wrote and read from directory"
+            //let path = DEFAULT_STORAGE_PATH + "message.txt"
+            //
+            //do {
+            //    let url = URL(filePath: path)
+            //    try str.write(to: url, atomically: true, encoding: .utf8)
+            //    let input = try String(contentsOf: url)
+            //    print(input)
+            //} catch {
+            //    print(error.localizedDescription)
+            //}
+            // --
+            
             do {
                 let node = try nodeBuilder.build()
                 text = "Node built"
@@ -37,18 +51,3 @@ struct ContentView: View {
         }
     }
 }
-
-
-// -- Write test file to directory to check availability
-//let str = "Wrote and read from directory"
-//let path = DEFAULT_STORAGE_PATH + "message.txt"
-//
-//do {
-//    let url = URL(filePath: path)
-//    try str.write(to: url, atomically: true, encoding: .utf8)
-//    let input = try String(contentsOf: url)
-//    print(input)
-//} catch {
-//    print(error.localizedDescription)
-//}
-// --
