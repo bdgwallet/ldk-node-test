@@ -11,7 +11,7 @@
 		654D88232AFE957400A97202 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654D88222AFE957400A97202 /* ContentView.swift */; };
 		654D88252AFE957500A97202 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 654D88242AFE957500A97202 /* Assets.xcassets */; };
 		654D88282AFE957500A97202 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 654D88272AFE957500A97202 /* Preview Assets.xcassets */; };
-		654D88302AFE95B300A97202 /* LDKNode in Frameworks */ = {isa = PBXBuildFile; productRef = 654D882F2AFE95B300A97202 /* LDKNode */; };
+		65EFABC22B015B8D00C03505 /* LDKNode in Frameworks */ = {isa = PBXBuildFile; productRef = 65EFABC12B015B8D00C03505 /* LDKNode */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				654D88302AFE95B300A97202 /* LDKNode in Frameworks */,
+				65EFABC22B015B8D00C03505 /* LDKNode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 			);
 			name = "ldk-node-test";
 			packageProductDependencies = (
-				654D882F2AFE95B300A97202 /* LDKNode */,
+				65EFABC12B015B8D00C03505 /* LDKNode */,
 			);
 			productName = "ldk-node-test";
 			productReference = 654D881D2AFE957400A97202 /* ldk-node-test.app */;
@@ -119,7 +119,7 @@
 			);
 			mainGroup = 654D88142AFE957400A97202;
 			packageReferences = (
-				654D882E2AFE95B300A97202 /* XCRemoteSwiftPackageReference "ldk-node" */,
+				65EFABC02B015B8D00C03505 /* XCRemoteSwiftPackageReference "ldk-node" */,
 			);
 			productRefGroup = 654D881E2AFE957400A97202 /* Products */;
 			projectDirPath = "";
@@ -356,20 +356,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		654D882E2AFE95B300A97202 /* XCRemoteSwiftPackageReference "ldk-node" */ = {
+		65EFABC02B015B8D00C03505 /* XCRemoteSwiftPackageReference "ldk-node" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lightningdevkit/ldk-node";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = revision;
+				revision = d955e629ad79831fad1d261a7c8460d9b3e2f685;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		654D882F2AFE95B300A97202 /* LDKNode */ = {
+		65EFABC12B015B8D00C03505 /* LDKNode */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 654D882E2AFE95B300A97202 /* XCRemoteSwiftPackageReference "ldk-node" */;
+			package = 65EFABC02B015B8D00C03505 /* XCRemoteSwiftPackageReference "ldk-node" */;
 			productName = LDKNode;
 		};
 /* End XCSwiftPackageProductDependency section */
